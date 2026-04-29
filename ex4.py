@@ -51,3 +51,4 @@ print(f"Total acréscimos:  R$ {total_acrescimos:.2f}")
 print(f"Total descontos:   R$ {desconto:.2f}")
 print(f"Salário bruto:     R$ {salario_bruto:.2f}")
 print(f"Salário final:     R$ {salario_final:.2f}")
+
