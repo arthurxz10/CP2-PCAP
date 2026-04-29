@@ -22,3 +22,4 @@ media_peso = media * 0.4
 
 print(f"\nMédia: {media:.1f}")
 print(f"Média com peso: {media_peso:.1f}")
+
