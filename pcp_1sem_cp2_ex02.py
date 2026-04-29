@@ -8,12 +8,12 @@
 #▪ Se os três lados forem iguais, apresente a mensagem: TRIANGULO EQUILATERO;
 #▪ Se apenas dois dos lados forem iguais, apresente a mensagem: TRIANGULO ISOSCELES;
 
-#leitura dos lados
+
 lado1 = float(input("Digite o primeiro lado: "))
 lado2 = float(input("Digite o segundo lado: "))
 lado3 = float(input("Digite o terceiro lado: "))
 
-#Ordenação em ordem decrescente (A >= B >= C) sem funções prontas de ordenação
+
 if lado1 >= lado2 and lado1 >= lado3:
     A = lado1
     if lado2 >= lado3:
@@ -39,7 +39,6 @@ else:
         B = lado2
         C = lado1
 
-#Verifica se forma triângulo
 if A >= B + C:
     print("NAO FORMA TRIANGULO")
 else:
