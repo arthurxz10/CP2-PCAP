@@ -1,9 +1,3 @@
-#Você foi contratado para criar um sistema de RH que calcula o
-# salário final de um funcionário com base em
-# diversos fatores: cargo, horas extras, faltas, bônus e descontos.
-
-# Sistema de RH - Cálculo de Salário
-
 def calcular_horas_extras(salario_base, horas):
     return salario_base * 0.015 * horas
 
@@ -23,7 +17,6 @@ def calcular_bonus(cargo, recebeu_bonus):
     else:
         return 100
 
-# Entrada de dados
 nome = input("Nome do funcionário: ")
 
 print("Cargos: 1-Gerente  2-Analista  3-Assistente  4-Estagiário")
@@ -34,7 +27,6 @@ horas_extras  = int(input("Horas extras: "))
 faltas        = int(input("Faltas no mês: "))
 recebeu_bonus = input("Recebeu bônus? (s/n): ").lower()
 
-# Cálculos
 extras    = calcular_horas_extras(salario_base, horas_extras)
 bonus     = calcular_bonus(cargo, recebeu_bonus)
 desconto  = calcular_desconto_faltas(salario_base, faltas)
@@ -43,7 +35,6 @@ total_acrescimos = extras + bonus
 salario_bruto    = salario_base + total_acrescimos
 salario_final    = salario_bruto - desconto
 
-# Resultado
 print("\n===== RESULTADO =====")
 print(f"Funcionário:       {nome}")
 print(f"Salário base:      R$ {salario_base:.2f}")
@@ -51,4 +42,3 @@ print(f"Total acréscimos:  R$ {total_acrescimos:.2f}")
 print(f"Total descontos:   R$ {desconto:.2f}")
 print(f"Salário bruto:     R$ {salario_bruto:.2f}")
 print(f"Salário final:     R$ {salario_final:.2f}")
-
